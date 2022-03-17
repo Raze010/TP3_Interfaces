@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP3_Interfaces.Exceptions
+namespace NavireHeritage.Exceptions
 {
     class GestionPortException : Exception
     {
