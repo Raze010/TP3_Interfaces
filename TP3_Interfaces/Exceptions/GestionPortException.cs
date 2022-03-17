@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TP3_Interfaces.Exceptions
 {
-    class GestionPortException
+    class GestionPortException : Exception
     {
+        public override string Message => "Erreur le : "+DateTime.Today +"\n" +base.Message;
     }
 }

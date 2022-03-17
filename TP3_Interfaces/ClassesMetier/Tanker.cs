@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NavireHeritage.classesMetier
 {
-    class Tanker : Navire
+    class Tanker : Navire, INavCommercable
     {
         public string typeFluide;
 
@@ -16,7 +16,7 @@ namespace NavireHeritage.classesMetier
             this.typeFluide = typeFluide;
         }
 
-        public void charger(int nbCharger)
+        public void Charger(int nbCharger)
         {
             if (nbCharger > TonnageActuel)
             {
@@ -26,7 +26,7 @@ namespace NavireHeritage.classesMetier
             TonnageActuel -= nbCharger;
         }
 
-        public void decharger(int nbDecharger)
+        public void Decharger(int nbDecharger)
         {
             if (nbDecharger < 0)
             {

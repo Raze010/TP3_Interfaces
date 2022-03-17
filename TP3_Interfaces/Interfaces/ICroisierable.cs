@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP3_Interfaces.Interfaces
+namespace NavireHeritage.classesMetier
 {
-    class ICroisierable
+    interface ICroisierable
     {
+        void Embarquer(List<object> objects);
+
+        void Debarquer(List<object> objects);
     }
 }

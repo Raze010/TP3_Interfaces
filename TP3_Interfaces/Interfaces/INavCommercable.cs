@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP3_Interfaces.Interfaces
+namespace NavireHeritage.classesMetier
 {
-    class INavCommercable
+    interface INavCommercable
     {
+        void Decharger(int qte);
+
+        void Charger(int qte);
     }
 }
